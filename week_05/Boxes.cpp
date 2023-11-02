@@ -6,16 +6,16 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
+        long long n;
         cin >> n;
-        vector<int> v(n);
-        for (int i = 0; i < n; i++)
+        vector<long long> v(n);
+        for (long long i = 0; i < n; i++)
         {
             cin >> v[i];
         }
-        sort(v.begin(), v.end(), greater<int>());
-        int ans = v[0];
-        int count = 1;
+        sort(v.begin(), v.end(), greater<long long>());
+        long long ans = v[0];
+        long long count = 1;
         for (int i = 1; i < n; i++)
         {
             if (ans >= v[i])
