@@ -8,6 +8,7 @@ bool isPalindrome(int n)
     reverse(copy.begin(), copy.end());
     return str == copy;
 }
+
 int main()
 {
     int t;
@@ -42,7 +43,7 @@ int main()
                 int b = v[i] ^ l[j];
                 if (mp[b] >= 1)
                 {
-                    // cout<<v[i]<<" "<<l[j]<<" ======"<<b<<endl;
+                    // cout << v[i] << " " << l[j] << " ======" << b << endl;
                     ans += mp[b];
                 }
             }
