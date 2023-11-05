@@ -34,7 +34,7 @@ int main()
             }
         }
 
-        int ans = 0;
+        int ans = n;
 
         for (int i = 0; i < n; i++)
         {
@@ -48,7 +48,7 @@ int main()
                 }
             }
         }
-        cout << ans << endl;
+        cout << ans/2 << endl;
     }
     return 0;
 }
